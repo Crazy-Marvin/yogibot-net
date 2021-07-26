@@ -8,6 +8,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7dadc506c2df42a38c2ef733948f9492)](https://www.codacy.com/gh/Crazy-Marvin/yogibot-net/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Crazy-Marvin/yogibot-net&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/Crazy-Marvin/yogibot-net/branch/master/graph/badge.svg)](https://codecov.io/gh/Crazy-Marvin/yogibot-net)
 [![Known Vulnerabilities](https://snyk.io/test/github/Crazy-Marvin/yogibot-net/badge.svg?targetFile=app%2Fbuild.gradle)](https://snyk.io/test/github/Crazy-Marvin/yogibot-net?targetFile=app%2Fbuild.gradle)
+![Ubuntu package](https://img.shields.io/ubuntu/v/yogibot)
 
 # YogiBot .NET
 
