@@ -1,0 +1,148 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Dascia.YogiClient.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Dascia.YogiClient.Views.MainWindow"
+		WindowState="Maximized"
+		Icon="/Assets/1024px.ico"
+        Title="Yogi Bot">
+	<Design.DataContext>
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
+	<Grid>
+		<Grid.Background>
+			<ImageBrush Stretch="UniformToFill"
+						Source="/Assets/bg1.jpg" />
+		</Grid.Background>
+		<Grid.RowDefinitions>
+			<!--menu-->
+			<RowDefinition Height="auto"/>
+			<!--phrase-->
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<!--menu-->
+		<Border Grid.Row="0"
+				Grid.Column="0" >
+			<StackPanel Orientation="Horizontal"
+						HorizontalAlignment="Right">
+
+				<!--language button-->
+				<AutoCompleteBox Background="White"
+								 BorderThickness="0,0,0,1"
+								 BorderBrush="LightGray"
+								 IsTextCompletionEnabled="True"
+								 FilterMode="Contains"
+								 Width="200"
+								 Items="{Binding Languages}"
+								 SelectedItem="{Binding SelectedLanguage}"
+								 ValueMemberBinding="{Binding Key}">
+				</AutoCompleteBox>
+				
+				<!--generate button-->
+				<Button Background="White"
+						Cursor="Hand"
+						Command="{Binding RequestSayingCommand}">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<!--image-->
+							<ColumnDefinition Width="auto"/>
+							<!--text-->
+							<ColumnDefinition Width="*"/>
+						</Grid.ColumnDefinitions>
+						<Image Grid.Row="0" 
+							   Grid.Column="0"
+							   Source="/Assets/refresh16.png"
+							   Stretch="None"/>
+						<TextBlock Grid.Row="0"
+								   Grid.Column="1"
+								   Text="Generate"
+								   FontSize="16"
+								   Padding="10,0"/>
+					</Grid>
+				</Button>
+
+				<!--contact button-->
+				<Button Background="White"
+						Cursor="Hand">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<!--image-->
+							<ColumnDefinition Width="auto"/>
+							<!--text-->
+							<ColumnDefinition Width="*"/>
+						</Grid.ColumnDefinitions>
+						<Image Grid.Row="0"
+							   Grid.Column="0"
+							   Source="/Assets/contact16.png"
+							   Stretch="None"/>
+						<TextBlock Grid.Row="0"
+								   Grid.Column="1"
+								   Text="Contact"
+								   FontSize="16"
+								   Padding="10,0"/>
+					</Grid>
+				</Button>
+
+				<!--legal button-->
+				<Button Background="White"
+						Cursor="Hand"
+						Command="{Binding ShowLegalCommand}">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<!--image-->
+							<ColumnDefinition Width="auto"/>
+							<!--text-->
+							<ColumnDefinition Width="*"/>
+						</Grid.ColumnDefinitions>
+						<Image Grid.Row="0"
+							   Grid.Column="0"
+							   Source="/Assets/legal16.png"
+							   Stretch="None"/>
+						<TextBlock Grid.Row="0"
+								   Grid.Column="1"
+								   Text="Legal"
+								   FontSize="16"
+								   Padding="10,0"/>
+					</Grid>
+				</Button>
+
+				<!--info button-->
+				<Button Background="White"
+						Cursor="Hand"
+						Command="{Binding ShowInfoCommand}">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<!--image-->
+							<ColumnDefinition Width="auto"/>
+							<!--text-->
+							<ColumnDefinition Width="*"/>
+						</Grid.ColumnDefinitions>
+						<Image Grid.Row="0"
+							   Grid.Column="0"
+							   Source="/Assets/info16.png"
+							   Stretch="None"/>
+						<TextBlock Grid.Row="0"
+								   Grid.Column="1"
+								   Text="Info"
+								   FontSize="16"
+								   Padding="10,0"/>
+					</Grid>
+				</Button>
+			</StackPanel>
+		</Border>
+		
+		<!--content-->
+		<Border Grid.Row="1"
+				Grid.Column="0">
+			<TextBlock HorizontalAlignment="Center"
+					   VerticalAlignment="Center"
+					   FontSize="24"
+					   Background="White"
+					   Padding="10"
+					   Text="{Binding Saying.Text}" />
+		</Border>
+	</Grid>
+</Window>

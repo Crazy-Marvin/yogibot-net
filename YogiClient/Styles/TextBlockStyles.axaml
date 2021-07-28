@@ -1,0 +1,15 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+			<TextBlock Classes="h2" 
+					   Text="Hello"/>
+        </Border>
+    </Design.PreviewWith>
+
+	<Style Selector="TextBlock.h2">
+		<Setter Property="FontSize" Value="16"/>
+		<Setter Property="FontWeight" Value="SemiBold"/>
+		<Setter Property="Padding" Value="4,14" />
+	</Style>
+</Styles>

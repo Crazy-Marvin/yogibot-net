@@ -1,0 +1,90 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:vm="using:Dascia.YogiClient.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Dascia.YogiClient.Views.AboutWindow"
+		Width="800"
+		Height="600"
+		WindowStartupLocation="CenterScreen"
+        Title="AboutWindow">
+	<Design.DataContext>
+		<vm:AboutWindowViewModel />
+	</Design.DataContext>
+	<Border Padding="10,4">
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="48"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+			<!--header-->
+			<TextBlock Grid.Row="0"
+					   Grid.Column="0"
+					   Text="About"
+					   FontWeight="SemiBold"
+					   FontSize="14"
+					   VerticalAlignment="Center" />
+			
+			<!--content-->
+		<ScrollViewer Grid.Row="1">
+			<StackPanel>
+				<TextBlock TextWrapping="Wrap" 
+						   Text="Would you care for some tea along with some sayings and inspirational quotes? Well, YogiBot shows you sayings from YogiTea and other than reading these useful quotes from famous people, you get to share them with family and friends, and spread these motivational quotes to anyone you care about. YogiBot comes with a clean and neat design, and the interface is so user-friendly that you’ll get the whole idea after browsing through available quotes and sayings. YogiBot has a big database of hundreds of quotes and sayings, and the good news is that you get to add the missing YogiTea quotes to the database by sending your desired sayings. So, if you like reading famous sayings and apply them in your life, use YogiBot for free and enjoy the always updating database of the YogiTea sayings. Share the inspirational quotes with family and friends, and enjoy reading them in various languages."/>
+				<Line Height="10" />
+				<TextBlock TextWrapping="Wrap"
+						   Classes="h2"
+						   Text="What Should I Expect From YogiBot?"/>
+				<TextBlock TextWrapping="Wrap"
+						   Text="Well, YogiBot gathers hundreds of sayings and quotes and shows it to you randomly in a most relaxing and peaceful interface. Users get to send the missing quotes to be added to the server, and they also get to share it with those who they care about. Available languages are English and German, and since the sayings appear randomly with no specific category, you’ll never know what comes next. The only thing you know, is that the sayings and quotes are inspirational, touching, and moving."/>
+				<TextBlock TextWrapping="Wrap"
+						   Classes="h2"
+						   Text="YogiBot Main Features at a Glance:"/>
+				<TextBlock TextWrapping="Wrap"
+						   Text="* Clean and neat design with fresh and intuitive interface"/>
+				<TextBlock TextWrapping="Wrap"
+						   Text="* Rich database of YogiTea sayings (and constantly updating)"/>
+				<TextBlock TextWrapping="Wrap"
+						   Text="* Share your favorite sayings to family and friends"/>
+				<TextBlock TextWrapping="Wrap"
+						   Text="* Send the missing quotes to be added to the server"/>
+				<TextBlock TextWrapping="Wrap"
+						   Text="* Available in English and German"/>
+				<TextBlock TextWrapping="Wrap"
+						   Text="* Useful for anyone"/>
+				<TextBlock TextWrapping="Wrap"
+						   Text="* Free to use and without ads"/>
+				<Line Height="10"/>
+				<TextBlock TextWrapping="Wrap"
+						   Text="* So, grab your cup of tea, read a saying, and let us know about any bugs, questions, feature requests, or any other suggestions."/>
+				<Line Height="20"/>
+				<TextBlock TextWrapping="Wrap"
+						   Text="Please add your client in the list."/>
+				<Line Height="10"/>
+				<!--donate button-->
+				<Button Background="White"
+						Cursor="Hand"
+						Command="{Binding DonateCommand}">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<!--image-->
+							<ColumnDefinition Width="auto"/>
+							<!--text-->
+							<ColumnDefinition Width="*"/>
+						</Grid.ColumnDefinitions>
+						<Image Grid.Row="0"
+							   Grid.Column="0"
+							   Source="/Assets/btc16.png"
+							   Stretch="None"/>
+						<TextBlock Grid.Row="0"
+								   Grid.Column="1"
+								   Text="Donate"
+								   FontSize="16"
+								   Padding="10,0"/>
+					</Grid>
+				</Button>
+			</StackPanel>
+		</ScrollViewer>
+		</Grid>
+	</Border>
+</Window>

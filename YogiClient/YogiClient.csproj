@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Dascia.YogiClient</RootNamespace>
+    <ApplicationIcon>1024px.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\1024px.ico" />
+    <None Remove="Assets\btc16.png" />
+    <None Remove="Assets\contact16.png" />
+    <None Remove="Assets\info16.png" />
+    <None Remove="Assets\legal16.png" />
+    <None Remove="Assets\refresh16.png" />
+    <None Remove="Assets\refresh24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.3" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.3" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.3" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.3" />
+  </ItemGroup>
+</Project>
