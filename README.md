@@ -6,7 +6,7 @@
 [![Issues](https://img.shields.io/github/issues/Crazy-Marvin/yogibot-net.svg?style=flat)](https://github.com/Crazy-Marvin/yogibot-net/issues)
 [![Pull requests](https://img.shields.io/github/issues-pr/Crazy-Marvin/yogibot-net.svg?style=flat)](https://github.com/Crazy-Marvin/yogibot-net/pulls)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7dadc506c2df42a38c2ef733948f9492)](https://www.codacy.com/gh/Crazy-Marvin/yogibot-net/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Crazy-Marvin/yogibot-net&amp;utm_campaign=Badge_Grade)
-[![codecov](https://codecov.io/gh/Crazy-Marvin/yogibot-net/branch/master/graph/badge.svg)](https://codecov.io/gh/Crazy-Marvin/yogibot-net)
+[![codecov](https://codecov.io/gh/Crazy-Marvin/yogibot-net/branch/development/graph/badge.svg)](https://codecov.io/gh/Crazy-Marvin/yogibot-net)
 ![GitHub Workflow Status CodeQL](https://img.shields.io/github/workflow/status/Crazy-Marvin/yogibot-net/codeql-analysis/development)
 ![Ubuntu package](https://img.shields.io/ubuntu/v/yogibot)
 
