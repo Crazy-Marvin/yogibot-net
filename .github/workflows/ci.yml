@@ -22,3 +22,6 @@ jobs:
         run: dotnet build --configuration Release --no-restore
       - name: Test
         run: dotnet test --no-restore --verbosity normal
+      - name: Codecov
+        uses: codecov/codecov-action@v2.0.2
+
