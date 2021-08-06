@@ -14,6 +14,22 @@
 
 This is the .NET client for Linux, Windows and macOS. Other clients are available too.
 
+ <a href="https://github.com/Crazy-Marvin/yogibot-net/releases/">
+    <img alt="Get it on Linux"
+        height="80"
+        src="https://user-images.githubusercontent.com/15004217/36810047-fa774906-1cc9-11e8-94da-ec2db1c37813.png" />
+        </a>
+  <a href="https://github.com/Crazy-Marvin/yogibot-net/releases/">
+    <img alt="Get it on Windows"
+        height="80"
+        src="https://user-images.githubusercontent.com/15004217/36810050-faf040c2-1cc9-11e8-8ace-b32a036cab81.png" />
+        </a>
+  <a href="https://github.com/Crazy-Marvin/yogibot-net/releases/">
+    <img alt="Get it on macOS"
+        height="80"
+        src="https://user-images.githubusercontent.com/15004217/36919363-43e3acee-1e5d-11e8-8378-5a313c27320a.png" />
+        </a>
+
 Would you care for some tea along with some sayings and inspirational quotes? Well, YogiBot shows you sayings from YogiTea and other than reading these useful quotes from famous people, you get to share them with family and friends, and spread these motivational quotes to anyone you care about. YogiBot comes with a clean and neat design, and the interface is so user-friendly that you’ll get the whole idea after browsing through available quotes and sayings. YogiBot has a big database of hundreds of quotes and sayings, and the good news is that you get to add the missing YogiTea quotes to the database by sending your desired sayings. So, if you like reading famous sayings and apply them in your life, use YogiBot for free and enjoy the always updating database of the YogiTea sayings. Share the inspirational quotes with family and friends, and enjoy reading them in various languages.
 
 ### What Should I Expect From YogiBot?
