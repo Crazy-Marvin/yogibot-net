@@ -1,2 +1,17 @@
 name: yogibot
+title: YogiBot
+base: core20
 version: 1.3
+contact:
+donation: 
+issues:
+source-code:
+website:
+summary:
+description:
+type:
+confinement:
+icon:
+layout: 
+license: GPL-3.0
+grade: devel
